@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Essentio</title>
+  <link rel="shortcut icon" href="images/header/fav-icon.svg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/media.css">
+</head>
+
+<body>
+  <!-- ========== Start header ========== -->
+  <header class="position-fixed w-100">
+    <div class="container">
+      <div class="header-flex-box w-100 flex-center position-relative">
+        <div class="logo w-100 flex-center justify-content-start">
+          <img src="images/header/logo.webp" alt="logo image">
+        </div>
+        <nav class="flex-center w-100 gap-4">
+          <a href="#">Home</a>
+          <a href="#section-about">About</a>
+          <a href="#">Shop</a>
+          <a href="#">Contact</a>
+        </nav>
+        <div class="header-btns w-100 flex-center">
+          <button class="search-btn flex-center"><i class="ri-search-line position-relative"></i></button>
+
+          <button class="card-btn flex-center gap-2 position-relative">
+            <i class="ri-shopping-bag-3-line"></i>
+            <span class="cart-item-count">1</span>
+            <span>Cart</span>
+          </button>
+
+          <div class="header-mob-menu-btn flex-center">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <div class="nav-menus hamburger" onclick="document.getElementById('menu-toggle').click()">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mobile navigation overlay -->
+    <div class="mobile-offcanvas">
+      <div class="nav-items w-100 h-100 flex-center">
+        <a href="#">Home</a>
+        <a href="#section-about">About</a>
+        <a href="#">Shop</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </header>
+  <!-- ========== End header ========== -->
+  <main>
+    <!-- ========== Start section-hero ========== -->
+    <section class="section-hero position-relative z-2">
+      <!-- hero-back-img -->
+      <div class="hero-back-img position-absolute">
+        <img class="desktop-hero-img d-block" src="images/hero/hero-back.jpg" alt="hero image">
+        <img class="mob-hero-img d-none" src="images/hero/hero-mob.jpg" alt="our hero image">
+      </div>
+      <!-- hero-product -->
+      <div class="hero-product position-absolute">
+        <img src="images/hero/vacuum.png" alt="our hero product">
+      </div>
+      <!-- hero-text -->
+      <div class="hero-text flex-center position-relative">
+        <h1 class="mb-3 hero-main-text-slide">Clean Smarter,<br> Live Better</h1>
+        <p class="hero-p-slide-up">Smart navigation, strong suction, and flexible scheduling work together to give you a
+          clean home without any
+          manual effort or interruptions.</p>
+        <button class="btn-style position-relative z-3 hero-btn-slide"><i class="ri-shopping-bag-3-line"></i> <span>Get
+            Yours
+            Now</span>
+        </button>
+      </div>
+    </section>
+    <!-- ========== End section-hero ========== -->
+    <!-- ========== Start section-client ========== -->
+    <section class="section-client section-padding w-100 h-auto">
+      <div class="container">
+        <div class="client-box w-100 h-100">
+
+          <div class="box box-1 flex-center w-100 client-box-1">
+            <div class="img-box">
+              <img src="images/usage/f-1.svg" alt="client usage">
+            </div>
+            <div class="info-box w-100">
+              <p class="text-center">
+                Essentio quickly mapped my home and navigates with precision — gliding under furniture and adapting
+                effortlessly to every surface
+              </p>
+
+            </div>
+          </div>
+
+          <div class="box box-2 flex-center w-100 client-box-2">
+            <div class="img-box">
+              <img src="images/usage/f-2.svg" alt="client usage">
+            </div>
+            <div class="info-box w-100">
+              <p class="text-center">
+                Essentio has streamlined my day-to-day. It navigates smoothly, dodges clutter, and leaves every floor
+                spotless — no effort required
+              </p>
+
+            </div>
+          </div>
+
+          <div class="box box-3 flex-center w-100 client-box-3">
+            <div class="img-box">
+              <img src="images/usage/f-3.svg" alt="client usage">
+            </div>
+            <div class="info-box w-100">
+              <p class="text-center">
+                The app and AI navigation make cleaning effortless. I schedule sessions remotely, and Essentio takes
+                care of every room with precision.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ========== End section-client ========== -->
+    <!-- ========== Start section-about ========== -->
+    <section class="section-about section-padding w-100 h-auto position-relative" id="section-about">
+      <div class="container">
+        <div class="about-grid-box w-100 h-auto">
+          <div class="left-col w-100 h-100 flex-center">
+            <h6 class="about-text">
+              Cleaning industry solutions designed to make cleaning faster, easier & more effective
+            </h6>
+            <button class="btn-style btn-style-dark about-btn">
+              <div class="icon flex-center"> <i class="ri-arrow-right-s-line"></i></div>
+              <span>More About</span>
+            </button>
+
+            <div class="about-points flex-center w-100">
+              <div class="point point-1 flex-center">
+                <img src="images/usage/icon-1.svg" alt="icon svg for point">
+                <p>Dust Removal Efficiency</p>
+              </div>
+
+              <div class="point point-2 flex-center">
+                <img src="images/usage/icon-2.svg" alt="icon svg for point">
+                <p>Continuous Cleaning</p>
+              </div>
+
+              <div class="point point-3 flex-center">
+                <img src="images/usage/icon-3.svg" alt="icon svg for point">
+                <p>Happy Customers Worldwide</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="right-col w-100 h-100 overflow-hidden">
+            <div class="about-img w-100 h-100 flex-center">
+              <img src="images/about/about.png" alt="about our product image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End section-about ========== -->
+
+    <!-- ========== Start section-products ========== -->
+    <section class="section-products section-padding w-100 h-auto position-relative">
+      <div class="container">
+        <!-- desktop-vs -->
+        <div class="desktop-vs w-100 h-100">
+          <div class="product-grid-box w-100 h-100">
+
+            <div class="product-box top w-100">
+              <div class="intro-text position-relative z-3 flex-center w-100 h-100">
+                <h2 class="product-intro">Discover the Finest <br>Robotic Vacuum Cleaners</h2>
+                <button class="btn-style btn-style-dark product-btn">
+                  <div class="icon flex-center"> <i class="ri-arrow-right-s-line"></i></div>
+                  <span>Discover More</span>
+                </button>
+              </div>
+            </div>
+            <div class="product-box btm w-100">
+              <div class="box left-box w-100 h-100 flex-center">
+                <div class="img-box img-1 position-relative">
+                  <img src="images/products/product-1.png" alt="our products images">
+                  <span>A30 Pro</span>
+                </div>
+                <div class="img-box img-2 position-relative">
+                  <img src="images/products/product-2.png" alt="our products images">
+                  <span>A20 Pro</span>
+                </div>
+              </div>
+              <div class="box right-box w-100 h-100">
+                <div class="img-box img-3 w-100 h-100 overflow-hidden position-relative">
+                  <img src="images/products/product-3.png" alt="our products images">
+                  <span>T20S Pro</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mob-vs w-100 h-100"></div>
+      </div>
+    </section>
+    <!-- ========== End section-products ========== -->
+
+    <!-- ========== Start section features ========== -->
+    <section class="section-padding section-features w-100 h-auto position-relative">
+      <div class="container">
+        <div class="features-grid-box w-100 h-100">
+          <div class="feature-box top-grid w-100 h-100">
+            <div class="box box-1">
+              <span class="section-intro">Key</span>
+              <h3 class="section-intro">Features</h3>
+            </div>
+            <div class="box box-2 flex-center h-100 w-100">
+              <div class="icon flex-center">
+                <img src="images/features/icon-1.svg" alt="feature icons">
+              </div>
+              <div class="info">
+                <h6>AI navigation</h6>
+                <p>Learns your home layout to deliver efficient, customized cleaning paths.
+                </p>
+              </div>
+
+            </div>
+            <div class="box box-3 flex-center h-100 w-100">
+              <div class="info">
+                <h6>Effortless cleaning starts here</h6>
+                <p>Discover the perfect solution for a sparkling home with minimal effort.</p>
+              </div>
+              <div class="buttons">
+                <button class="btn-style btn-style-dark">
+                  <div class="icon flex-center"> <i class="ri-arrow-right-s-line"></i></div>
+                  <span>More About</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="feature-box btm-grid w-100 h-100">
+            <div class="box box-4 flex-center h-100">
+              <div class="info w-100">
+                <span>25% off</span>
+                <h6>Save big today!</h6>
+              </div>
+            </div>
+
+            <div class="box box-5 box-2 flex-center">
+              <div class="icon flex-center">
+                <img src="images/features/icon-2.svg" alt="feature icons">
+              </div>
+              <div class="info">
+                <h6>Real-time mapping</h6>
+                <p>Creates a detailed map of your home for precise cleaning coverage.
+                </p>
+              </div>
+            </div>
+
+            <div class="box box-6 box-2 flex-center">
+              <div class="icon flex-center">
+                <img src="images/features/icon-3.svg" alt="feature icons">
+              </div>
+              <div class="info">
+                <h6>Self-charging technology</h6>
+                <p>Automatically returns to its dock to recharge when the battery runs low.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End section features ========== -->
+
+    <!-- ========== Start section-top-products ========== -->
+    <section class="section-choice section-padding w-100 h-auto position-relative overflow-hidden">
+      <div class="container">
+        <div class="choice-grid-box w-100 h-auto">
+
+          <div class="left-box w-100 h-100">
+
+            <div class="top-row flex-center w-100 h-auto">
+              <div class="heading flex-center">
+                <span class="section-intro">Customer</span>
+                <h3 class="section-intro">Favorites</h3>
+              </div>
+              <div class="btn btn-all w-auto flex-center justify-content-end">
+                <a href="#"> View All</a>
+              </div>
+            </div>
+
+            <div class="btm-row overflow-hidden flex-center">
+              <div class="splide product-splide ">
+                <div class="splide__track">
+                  <div class="splide__list">
+                    <!-- slide-1 -->
+                    <div class="splide__slide">
+                      <div class="img-slide-box">
+                        <img
+                          src="https://cdn.prod.website-files.com/676a4bdadf598aa4b02f9592/6777b7207fda397cbec7a0fe_product-01.avif"
+                          alt="customer choice best products">
+                      </div>
+                      <div class="product-info-box w-100 h-100 flex-center">
+                        <h6>Quickshine polishing</h6>
+                        <ul class="flex-center flex-column align-items-start p-0 mb-5">
+                          <li>
+                            <img src="images/choice/icon.svg" alt="list icon">
+                            <span>Ergonomic Design</span>
+                          </li>
+                          <li>
+                            <img src="images/choice/icon.svg" alt="list icon">
+                            <span>Durable Materials</span>
+                          </li>
+                          <li>
+                            <img src="images/choice/icon.svg" alt="list icon">
+                            <span>Compact & Portable</span>
+                          </li>
+                        </ul>
+                        <div class="product-btn">
+                          <button class="btn-style btn-style-dark">
+                            <span>₹69,900 <s>₹86500</s></span>
+                            <div class="icon flex-center">
+                              <i class="ri-arrow-right-s-line"></i>
+                            </div>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slide-2 -->
+                    <div class="splide__slide">
+                      <div class="splide__slide">
+                        <!-- Your content here -->
+                        <div class="img-slide-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/676a4bdadf598aa4b02f9592/6773935d1171f88deb2c7158_product-05.avif"
+                            alt="customer choice best products">
+                        </div>
+                        <div class="product-info-box w-100 h-100 flex-center">
+                          <h6>SmartSweep AI</h6>
+                          <ul class="flex-center flex-column align-items-start p-0 mb-5">
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Ergonomic Design</span>
+                            </li>
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Durable Materials</span>
+                            </li>
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Compact & Portable</span>
+                            </li>
+                          </ul>
+                          <div class="product-btn">
+                            <button class="btn-style btn-style-dark">
+                              <span>₹69,900 <s>₹86500</s></span>
+                              <div class="icon flex-center">
+                                <i class="ri-arrow-right-s-line"></i>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slide-3 -->
+                    <div class="splide__slide">
+                      <div class="splide__slide">
+                        <!-- Your content here -->
+                        <div class="img-slide-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/676a4bdadf598aa4b02f9592/676e5200c1c2e97dd32390c2_product-02.avif"
+                            alt="customer choice best products">
+                        </div>
+                        <div class="product-info-box w-100 h-100 flex-center">
+                          <h6>Ecoclean spheres</h6>
+                          <ul class="flex-center flex-column align-items-start p-0 mb-5">
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Ergonomic Design</span>
+                            </li>
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Durable Materials</span>
+                            </li>
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Compact & Portable</span>
+                            </li>
+                          </ul>
+                          <div class="product-btn">
+                            <button class="btn-style btn-style-dark">
+                              <span>₹69,900 <s>₹86500</s></span>
+                              <div class="icon flex-center">
+                                <i class="ri-arrow-right-s-line"></i>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slide-4 -->
+                    <div class="splide__slide">
+                      <div class="splide__slide">
+                        <!-- Your content here -->
+                        <div class="img-slide-box">
+                          <img
+                            src="https://cdn.prod.website-files.com/676a4bdadf598aa4b02f9592/676e52558ac677b068fa2006_product-03.avif"
+                            alt="customer choice best products">
+                        </div>
+                        <div class="product-info-box w-100 h-100 flex-center">
+                          <h6>Quickshine polishing</h6>
+                          <ul class="flex-center flex-column align-items-start p-0 mb-5">
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Ergonomic Design</span>
+                            </li>
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Durable Materials</span>
+                            </li>
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Compact & Portable</span>
+                            </li>
+                          </ul>
+                          <div class="product-btn">
+                            <button class="btn-style btn-style-dark">
+                              <span>₹69,900 <s>₹86500</s></span>
+                              <div class="icon flex-center">
+                                <i class="ri-arrow-right-s-line"></i>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- slide-5 -->
+                    <div class="splide__slide">
+                      <div class="splide__slide">
+                        <!-- Your content here -->
+                        <div class="img-slide-box">
+                          <img src="https://s1.kaercher-media.com/mam/12696200/product/205900/d0.jpg"
+                            alt="customer choice best products">
+                        </div>
+                        <div class="product-info-box w-100 h-100 flex-center">
+                          <h6>Quickshine polishing</h6>
+                          <ul class="flex-center flex-column align-items-start p-0 mb-5">
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Ergonomic Design</span>
+                            </li>
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Durable Materials</span>
+                            </li>
+                            <li>
+                              <img src="images/choice/icon.svg" alt="list icon">
+                              <span>Compact & Portable</span>
+                            </li>
+                          </ul>
+                          <div class="product-btn">
+                            <button class="btn-style btn-style-dark">
+                              <span>₹69,900 <s>₹86500</s></span>
+                              <div class="icon flex-center">
+                                <i class="ri-arrow-right-s-line"></i>
+                              </div>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="right-box w-100 h-100 overflow-hidden rounded-5">
+            <div class="img-box w-100 h-100 section-choice-discount-img">
+              <img src="images/choice/choice-back.jpg" alt="choice image">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End section-top-products ========== -->
+
+    <!-- ========== Start section-service ========== -->
+    <section class="section-service section-padding w-100 h-auto position-relative overflow-hidden">
+      <div class="container">
+        <div class="service-grid-box w-100 h-100">
+          <div class="left-col w-100 h-100 flex-center gap-4">
+            <div class="top-row">
+              <div class="heading flex-center">
+                <span class="section-intro">Our</span>
+                <h3 class="section-intro">Services</h3>
+              </div>
+            </div>
+            <div class="btm-row w-100 h-100 flex-center flex-column ">
+              <p class="text-center">From initial guidance to ongoing assistance, our dedicated team ensures you thrive
+                with top-notch
+                service and expertise.</p>
+              <video id="singlePlayVideo" autoplay muted loop>
+                <source src="images/service/sv.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <div class="right-col service-right-col flex-center gap-4">
+
+            <div class="box box-1">
+              <div class="icon flex-center">
+                <img src="images/service/icon-1.svg" alt="our service icon">
+              </div>
+              <div class="info">
+                <h6>Pre-Sale Consultation</h6>
+                <p>Discover our solutions with tailored sessions designed to help you choose the best fit for your
+                  needs.
+                </p>
+              </div>
+            </div>
+            <div class="box box-2">
+              <div class="icon flex-center">
+                <img src="images/service/icon-2.svg" alt="our service icon">
+              </div>
+              <div class="info">
+                <h6>Post-Sale Support</h6>
+                <p>Our specialists will assist you with installation and optimization to maximize your product
+                  experience.
+                </p>
+              </div>
+            </div>
+            <div class="box box-3">
+              <div class="icon flex-center">
+                <img src="images/service/icon-3.svg" alt="our service icon">
+              </div>
+              <div class="info">
+                <h6>Skilled Engineers</h6>
+                <p>Our qualified engineers offer nationwide assistance, delivering dependable repair and upkeep services
+                  wherever you are.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- ========== End section-service ========== -->
+
+    <!-- ========== Start section-counter ========== -->
+    <section class="section-counter section-padding w-100 h-auto overflow-hidden">
+      <div class="container">
+        <div class="counter-grid-box w-100 h-100">
+          <div class="counter-info left-col flex-center w-100 h-100">
+            <h4 class="data-counter" data-count="65" data-suffix="k"></h4>
+            <h6>Customers Satisfied</h6>
+            <p>Essentio boasts over 4.5 million satisfied customers across 40+ countries, highlighting its global reach
+              and dedication to innovative, reliable products that simplify household tasks and boost convenience.</p>
+            <div class="counter-btn">
+              <button class="btn-style btn-style-dark counter-btn-1">
+                <div class="icon flex-center"> <i class="ri-arrow-right-s-line"></i></div>
+                <span>Explore Reviews</span>
+              </button>
+            </div>
+          </div>
+          <div class="counter-info right-col flex-center w-100 h-100">
+            <h4 class="data-counter" data-count="650" data-suffix="km&lt;sup&gt;2&lt;/sup&gt;"></h4>
+            <h6>Area Cleaned Daily</h6>
+            <p>Essentio robot vacuum cleaners clean over 650 square kilometers daily worldwide, a testament to their
+              efficiency and the satisfaction of our global customers, showcasing the widespread success of our
+              technology.</p>
+            <div class="counter-btn">
+              <button class="btn-style btn-style-dark counter-btn-2">
+                <div class="icon flex-center"> <i class="ri-arrow-right-s-line"></i></div>
+                <span>Order Today</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ========== End section-counter ========== -->
+
+    <!-- ========== Start section-cta ========== -->
+    <section class="section-cta section-padding w-auto h-auto position-relative">
+      <div class="container">
+        <div class="cta-grid-box w-100 h-100">
+
+          <div class="top-row w-100 h-auto flex-center">
+            <h6>Take full</h6>
+          </div>
+          <div class="mdl-row flex-center gap-4">
+            <h6>control with</h6>
+            <div class="image-box">
+              <img src="images/cta/img.png" alt="our app in phone image">
+            </div>
+            <h6>Essentio app</h6>
+          </div>
+
+          <div class="btm-row flex-center flex-column gap-5 overflow-hidden">
+            <p>Discover how ESSENTIO revolutionizes home cleaning with AI-driven precision. Watch as it navigates,
+              cleans, and adapts to your home—effortlessly making every corner spotless.</p>
+            <div class="app-store flex-center gap-3 overflow-hidden">
+              <img class="app-store-img-1"
+                src="https://cdn.prod.website-files.com/676a4bdadf598aa4b02f956b/676fd24d2122796ef4d295d5_google-play.svg"
+                alt="app store icon">
+              <img class="app-store-img-2"
+                src="https://cdn.prod.website-files.com/676a4bdadf598aa4b02f956b/676fd24de42758d966afa4c3_app-store.svg"
+                alt="app store icon">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- ========== End section-cta ========== -->
+
+    <!-- ========== Start section-cta-two ========== -->
+    <section
+      class="section-cta-two section-padding overflow-hidden w-100 position-relative z-1 flex-center flex-column justify-content-start">
+      <div class="container">
+        <div class="cta-info w-100 h-100 flex-center position-relative z-3">
+          <h6 class="section-intro">Our Trusted Partners</h6>
+          <p class="cta-two-intro">You can find Essentio vacuums across various online platforms and retail stores,
+            making it easy to purchase
+            from your preferred shopping destination.</p>
+        </div>
+      </div>
+      <div class="brands flex-center w-100 h-auto gap-3">
+        <img class="img-1" src="images/cta-2/brand-1.png" alt="our supported brands image">
+        <img class="img-2" src="images/cta-2/brand-2.png" alt="our supported brands image">
+        <img class="img-3" src="images/cta-2/brand-3.png" alt="our supported brands image">
+        <img class="img-4" src="images/cta-2/brand-4.png" alt="our supported brands image">
+        <img class="img-5" src="images/cta-2/brand-5.png" alt="our supported brands image">
+      </div>
+    </section>
+    <!-- ========== End section-cta-two ========== -->
+  </main>
+  <!-- ========== Start footer ========== -->
+  <footer class="w-100 h-auto overflow-hidden">
+    <div class="footer-marque">
+      <div class="info marquee-slide">
+        <span>Clean smart and save big—get 25% off today!</span>
+        <span><img
+            src="https://cdn.prod.website-files.com/676a4bdadf598aa4b02f956b/677266ec7fd644e2fef5a92e_footer-marquee-icon.svg"
+            alt="text icon"></span>
+        <span>Get upto 50% off on your first purchase</span>
+      </div>
+    </div>
+    <div class="container">
+      <div class="footer-main w-100 h-100">
+        <div class="footer-top w-100">
+          <div class="info">
+            <h6>Get the latest updates on smart home technology.</h6>
+          </div>
+          <div class="subscribe w-100 flex-center flex-column align-items-start">
+            <form action="#" method="post" class="flex-center">
+              <input type="email" placeholder="Enter your email">
+              <button type="submit">Subscribe</button>
+            </form>
+            <span>By clicking subscribe, you accept our Privacy Policy</span>
+          </div>
+        </div>
+        <div class="footer-btm w-100 h-100">
+          <div class="footer-btm-grid-box">
+
+            <div class="left-col w-100 h-100 flex-center">
+              <div class="logo flex-center justify-content-start mb-3">
+                <img src="images/header/logo.webp" alt="footer logo image">
+              </div>
+              <p>Get in touch, access support, and find all the information you need. Join the Essentio community for
+                a
+                smarter, cleaner home.</p>
+              <ul class="flex-center">
+                <li>
+                  <i class="ri-mail-send-line"></i>
+                  <a href="mailto:abc@gmail.com">abc@gmail.com</a>
+                </li>
+                <li>
+                  <i class="ri-phone-line"></i>
+                  <a href="tel:+91 9088098076">9088098076</a>
+                </li>
+                <li>
+                  <i class="ri-map-pin-5-line"></i>
+                  <a href="">Belghoria, kolkata-700057</a>
+                </li>
+              </ul>
+              <div class="social flex-center w-100">
+                <a href="#" class="social-box flex-center">
+                  <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#" class="social-box flex-center">
+                  <i class="ri-whatsapp-fill"></i>
+                </a>
+                <a href="#" class="social-box flex-center">
+                  <i class="ri-instagram-fill"></i>
+                </a>
+                <a href="#" class="social-box flex-center">
+                  <i class="ri-twitter-fill"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="mdl-col flex-center justify-content-between align-items-start">
+              <div class="box box-1 flex-center">
+                <h3 class="section-title">Quick Links</h3>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">Quiz</a></li>
+                </ul>
+              </div>
+
+              <div class="box box-2 flex-center">
+                <h3 class="section-title">Information Links</h3>
+                <ul>
+                  <li><a href="#">1-Year Extended Warranty</a></li>
+                  <li><a href="#">Register Your Product</a></li>
+                  <li><a href="#">Product Service Videos</a></li>
+                  <li><a href="#">Influencer Collaboration</a></li>
+                  <li><a href="#">Store Locator</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">User Guide</a></li>
+                  <li><a href="#">CSR</a></li>
+                </ul>
+              </div>
+
+              <div class="box box-3 flex-center">
+                <h3 class="section-title">Policies</h3>
+                <ul>
+                  <li><a href="#">Product Warranty Policy</a></li>
+                  <li><a href="#">Battery Disposal Policy</a></li>
+                  <li><a href="#">Privacy Policy</a></li>
+                  <li><a href="#">Shipping Policy</a></li>
+                  <li><a href="#">Refund Policy</a></li>
+                  <li><a href="#">Terms & Conditions For Extended Warranty</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sub-footer w-100 flex-center">
+      <span>© 2025, All Rights Reserved By Essentio</span>
+    </div>
+  </footer>
+  <div class="scroll-top position-fixed flex-center">
+    <i class="ri-arrow-up-s-fill"></i>
+  </div>
+  <!-- ========== End footer ========== -->
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.1/jquery.marquee.min.js"></script>
+
+  <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <script src="script/script.js"></script>
+</body>
+
+</html>
